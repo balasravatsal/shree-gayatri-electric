@@ -1,0 +1,286 @@
+#root {
+    text-align: center;
+    background: #F4F4F4
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Red-Hat Display", sans-serif;
+}
+
+
+.main-img {
+    position: absolute;
+    top: -14vh;
+    left: 5vw;
+    z-index: 10;
+    transform: scale(0.8)
+}
+
+/* big screen */
+@media (min-width: 900px) {
+    .content-text {
+        margin: 0 1rem 10rem 10rem;
+    }
+
+    .service-text {
+        padding: 3rem 16rem;
+    }
+
+    .card-box {
+        padding: 5rem 15rem;
+    }
+
+    .about-container {
+        height: 100vh;
+        margin-top: 5rem;
+        background-color: rgba(0, 0, 0, 0.94);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us-container {
+        height: 100vh;
+        /*margin-top: 5rem;*/
+        background-color: rgba(0, 0, 0, 0.94);
+        color: #fff;
+        display: flex;
+        /*!*align-items: center;*!                                    ////////////////////////////////////////////////////////////////*/
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-content {
+        /*max-width: 90%; !* Adjust the value as needed *!*/
+        padding: 1rem 8rem;
+    }
+
+
+    .people-list-container {
+        display: flex;
+        overflow-x: auto; /* Use auto for responsive scrolling */
+        padding: 1rem;
+        margin: 3rem;
+    }
+
+    .people-list {
+        display: flex;
+        gap: 3rem;
+        /* Adjust the gap and other styles as needed */
+    }
+
+    .people-list-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, Edge */
+    }
+
+    .person-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px; /* Adjust the width of each person item as needed */
+        padding: 1rem;
+        /*background-color: #f2f2f2;*/
+        /*border-radius: 4px;*/
+        /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    }
+
+    .person-image {
+        width: 319.573px; /* Adjust the width of the person's image */
+        height: 305px; /* Adjust the height of the person's image */
+        border-radius: 50%; /* Make the image circular */
+        margin-bottom: 0.5rem;
+    }
+
+    .human-capital-bg {
+        /*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./assets/Images/humanCapital (1).png'), url('./assets/Images/humanCapital (2).png');*/
+        background-image: url("./assets/Images/humanCapitalBG.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .human-capital {
+        padding: 1rem 8rem;
+    }
+
+
+
+
+    /*   */
+    .nice-few-words-container {
+        background-image: url("./assets/Images/NiceFewWordsBG.png");
+        background-size: cover;
+        color: #ffffff;
+        background-position: top center; /* Align the image to the top center */
+        background-repeat: no-repeat;
+    }
+
+    .nice-few-words {
+        padding: 10rem;
+        margin: 5rem;
+    }
+
+    .nice-few-words-container-icons {
+        width: 320px; /* Adjust the width of the person's image */
+        height: 305px;
+    }
+
+
+    /*    */
+    .motivation-card {
+        display: flex;
+        flex-direction: row;
+        /*border: 2px solid red;*/
+    }
+
+    .motivation-card-details {
+        text-align: left;
+    }
+
+
+
+
+/*    */
+    .footer-container{
+        background-image: url("./assets/Images/footerBG.png");
+        background-size: cover;
+        color: #ffffff;
+        background-position: top center; /* Align the image to the top center */
+        background-repeat: no-repeat;
+    }
+    .footer-icons {
+        /*padding: 10rem;*/
+        margin: 5rem;
+        max-width: 100%;
+    }
+}
+
+
+/* mini screen */
+@media (max-width: 900px) {
+    .content-text {
+        margin: 0 0 0 1rem;
+    }
+
+    .main-img {
+        display: none;
+    }
+
+    .service-text {
+        padding: 1rem 3rem;
+    }
+
+    .card-box {
+        /*border: 2px solid #ff0000;*/
+        padding: 1rem 1rem 1rem;
+    }
+
+    .about-container {
+        height: auto;
+        margin-top:5rem;
+        background-color: rgba(0, 0, 0, 0.94);
+        color: #fff;
+        padding: 3rem 1rem;
+    }
+
+    .about-us-container {
+        height: auto; /* Allow the container to expand based on content */
+        /*margin-top: 40rem; !* Adjust the value as needed *!*/
+        background-color: rgba(0, 0, 0, 0.94);
+        color: #fff;
+    }
+
+    .people-list-container {
+        display: flex;
+        overflow-x: auto; /* Use auto for responsive scrolling */
+        /*margin: 1rem*/
+        /*scrollbar-width: none; !* Firefox doesn't support this property *!*/
+        /*justify-content: space-around;*/
+        /*-ms-overflow-style: none; !* Hide scrollbar for Internet Explorer *!*/
+    }
+    .people-list-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome, Safari, Edge */
+    }
+
+    .people-list {
+        display: flex;
+        gap: 1rem;
+    }
+
+
+
+    .person-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px; /* Adjust the width of each person item as needed */
+        padding: 1rem;
+        background-color: #f2f2f2;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .person-image {
+        width: 80px; /* Adjust the width of the person's image for smaller screens */
+        height: 80px; /* Adjust the height of the person's image for smaller screens */
+    }
+
+
+    .human-capital {
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+
+    .nice-few-words-container {
+        background-color: #000000;
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+    }
+
+    .nice-few-words {
+        padding: 1rem;
+    }
+
+    .nice-few-words-container-icons {
+        width: 119.573px;
+        height: 105px;
+    }
+
+
+    /*    */
+    .motivation-card {
+        display: flex;
+        flex-direction: column;
+        /*border: 2px solid red;*/
+    }
+
+    .motivation-card-details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+
+
+/*    */
+
+    .footer-container{
+        background-image: url("./assets/Images/footerBG.png");
+        background-size: cover;
+        color: #ffffff;
+        background-position: top center; /* Align the image to the top center */
+        background-repeat: no-repeat;
+    }
+    .footer-icons {
+        /*padding: 10rem;*/
+        margin: 5rem;
+        max-width: 90%;
+    }
+}
+
+
+
